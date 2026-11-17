@@ -280,7 +280,7 @@ cc_defaults {
 
 cc_library_shared {
     name: "libaudioclient_shim",
-    shared_libs: ["libaudioclient", "libutils", "liblog"],
+    shared_libs: ["libaudiobase", "libaudioclient", "libutils", "liblog"],
     header_libs: ["libmedia_headers"],
     srcs: [
         "libaudioclient/AudioSystem.cpp",
